@@ -1,0 +1,75 @@
+header {
+    height: 100vh;
+    padding: 7rem 0 7rem 0;
+    overflow: hidden;
+}
+
+.header__container {
+    padding-top: 8%;
+    text-align: center;
+    height: 100%; 
+    position: relative;
+}
+
+p{
+    text-align: justify;
+    padding: 1rem 10rem 1rem 10rem; /*top right bottom left*/
+}
+
+/* ========== CTA ========== */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+
+
+/* ========== HEADER SOCIALS ========== */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary); 
+}
+
+/* ========== SCROLL DOWN ========== */
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+
+@media screen and (max-width: 1024px)  {
+    header {
+        height: 68vh;
+         
+    }
+}
+
+/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+
+@media screen and (max-width: 600px)  {
+    header {
+        height: 100vh;
+    }
+    .header__socials, .scroll__down {
+        display: none;
+    }
+}

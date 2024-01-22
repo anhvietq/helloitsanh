@@ -1,0 +1,44 @@
+.about__container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.about_description {
+   text-align: justify;
+   align-self: center;
+   padding: 2rem 0 2rem 0;
+}
+/* ========== ME ========== */
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: relative;
+    left: calc(50% - 11rem);
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 0 0 0;
+}
+
+.technologies {
+    padding: 1rem 0rem 1rem 0rem; /* top right bottom left */
+  }
+  
+ ul {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(150px,10px));
+    list-style-type: none;
+    padding: 0rem 0rem 1rem 0rem;
+}
+  
+  .technologies_list li {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+.experience__container {
+    padding: 1rem 1rem 1rem 1rem;
+}
+  
+.job_list {
+    padding: 0rem 1rem 0rem 1rem;
+}
+  
+.job_logo {
+    width: 15rem; /* Set a fixed width for the logo */
+    margin: auto;
+    padding: 1rem 1rem 2rem 1rem;
+}
+  
+.job_logo.bigger {
+    width: 30rem; /* Set the desired width for the larger logo */
+}
+  
+.job_description {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+  
+.job_duration {
+    padding: 0.5rem 0 0.5rem 0;
+}
+  
+.job_description li {
+    position: relative;
+    padding-bottom: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    list-style: none;
+}
+  
+.slick-dots li {
+    margin: 0 5px;
+}
+  
+.slick-dots button {
+    font-size: 12px; /* Adjust as needed */
+    border: transparent;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background-color: rgba(73, 72, 72, 0.3) !important; /* Gray out non-active dots */
+    transition: background-color 0.3s;
+}
+  
+.slick-dots button:hover {
+    background-color: var(--color-primary) !important;
+}
+  
+.slick-dots .slick-active button {
+    background-color: var(--color-primary) !important; /* Change background color of active dot */
+
+}
+
