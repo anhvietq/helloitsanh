@@ -1,6 +1,6 @@
 import React from 'react';
 import './experience.css';
-import { GiStarShuriken, GiWhiteBook } from 'react-icons/gi';
+import { GiStarShuriken} from 'react-icons/gi';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -69,7 +69,9 @@ const Experience = () => {
 
   return (
     <section id='experience'>
+      <div className='section_title'>
       <h2> Experiences </h2>
+      </div>
       <div className='container experience__container'>
         <Slider {...settings}>
           {carouselItems.map(item => (

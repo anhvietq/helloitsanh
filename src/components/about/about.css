@@ -37,6 +37,10 @@
     align-items: center;
   }
 
+  #about {
+    margin-top: -5rem;
+    margin-bottom: 10rem; /* Increase margin to make the section longer */
+}
 
 
 
