@@ -1,0 +1,48 @@
+.project__container {
+    display: grid;
+    gap: 1%; /* Adjust the gap as needed */
+}
+
+.project_title {
+    font-size: 1.8rem;
+    position: relative;
+}
+
+
+.project_title::before {
+    content: '>';
+    color: var(--color-primary);
+    position: absolute;
+    bottom: 0;
+    right: calc(100% + 10px); /* Adjust the positioning as needed */
+}
+
+
+
+.project_description {
+    text-align: justify;
+    align-self: center;
+    margin-bottom: 2rem; /* Increase margin to add space between projects */
+}
+
+.pokedex,
+.metaintro,
+.spacelab {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    gap: 2%;
+}
+
+.project__container img {
+    width: 15rem;
+    padding: 0rem 0 1rem 0; /* Adjust padding as needed */
+    align-self: center; /* Center the image vertically */
+}
+
+.spacelab img {
+    width: 35rem;
+}
+
+#projects {
+    margin-bottom: 20rem; /* Increase margin to make the section longer */
+}

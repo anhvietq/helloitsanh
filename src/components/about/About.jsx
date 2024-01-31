@@ -10,7 +10,9 @@ import { GiStarShuriken } from "react-icons/gi";
 const About = () => {
   return (
     <section id='about'>
+       <div className='section_title'>
       <h2> About Me </h2>
+      </div>
       <div className='container about__container'>
         <div className='me'>
           <img src={ME} alt='me'/>

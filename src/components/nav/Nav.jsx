@@ -3,7 +3,7 @@ import './nav.css'
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
-import { RiServiceLine } from "react-icons/ri";
+import { IoBriefcaseOutline } from "react-icons/io5";
 import { TbMessageChatbot } from "react-icons/tb";
 import { useState } from 'react';
 
@@ -17,9 +17,9 @@ const Nav = () => {
       <a href='#about' onClick={() => setactiveNav('#about')}
                       className= {activeNav ===  '#about' ? 'active' : ''} > <AiOutlineUser/> </a>
       <a href='#experience' onClick={() => setactiveNav('#experience')}
-                      className= {activeNav ===  '#experience' ? 'active' : ''}> <BiBook/> </a>
-      <a href='#services' onClick={() => setactiveNav('#services')}
-                      className= {activeNav ===  '#services' ? 'active' : ''}> <RiServiceLine/> </a>
+                      className= {activeNav ===  '#experience' ? 'active' : ''}> <IoBriefcaseOutline/> </a>
+      <a href='#projects' onClick={() => setactiveNav('#projects')}
+                      className= {activeNav ===  '#projects' ? 'active' : ''}> <BiBook/> </a>
       <a href='#contact' onClick={() => setactiveNav('#contact')}
                       className= {activeNav ===  '#contact' ? 'active' : ''}> <TbMessageChatbot/> </a>
     </nav>
