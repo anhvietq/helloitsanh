@@ -20,8 +20,6 @@ const Nav = () => {
                       className= {activeNav ===  '#experience' ? 'active' : ''}> <IoBriefcaseOutline/> </a>
       <a href='#projects' onClick={() => setactiveNav('#projects')}
                       className= {activeNav ===  '#projects' ? 'active' : ''}> <BiBook/> </a>
-      <a href='#contact' onClick={() => setactiveNav('#contact')}
-                      className= {activeNav ===  '#contact' ? 'active' : ''}> <TbMessageChatbot/> </a>
     </nav>
   )
 }
