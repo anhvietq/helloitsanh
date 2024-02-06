@@ -66,20 +66,20 @@ h5 {
 
 section {
     height: max-content;
-
 }
-.section_title::before,
+
 .section_title::after {
     content: '';
     width: 400px;
     height: 1px;
     background: var(--color-primary);
     position: absolute;
-    align-items: center;
-    right: 37%;
+    margin: auto;
+    left: 0%;
+    right: 0%;
+    
+   
 }
-
-
 
 .section_title{
     text-align: center;
@@ -150,7 +150,7 @@ img {
     }
 
     section {
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 }
 

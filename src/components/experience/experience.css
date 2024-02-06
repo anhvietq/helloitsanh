@@ -1,38 +1,38 @@
 .experience__container {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem; /* Adjust padding for smaller devices */
 }
-  
+
 .job_list {
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 0; /* Remove padding for smaller devices */
 }
-  
+
 .job_logo {
-    width: 15rem; /* Set a fixed width for the logo */
+    width: 100%; /* Make the logo width 100% for smaller devices */
+    max-width: 15rem; /* Set a maximum width for larger devices */
     margin: auto;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem 0 2rem 0; /* Adjust padding for smaller devices */
 }
-  
+
 .job_logo.bigger {
-    width: 30rem; /* Set the desired width for the larger logo */
+    max-width: 20rem; /* Set the desired maximum width for the larger logo */
 }
-  
+
 .job_description {
     text-align: justify;
     display: flex;
     flex-direction: column;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 0; /* Remove padding for smaller devices */
 }
-  
+
 .job_duration {
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem 0; /* Adjust padding for smaller devices */
 }
-  
+
 .job_description li {
     position: relative;
     padding-bottom: 16px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10px; /* Adjust padding for smaller devices */
+    padding-right: 10px; /* Adjust padding for smaller devices */
 }
 
 .slick-dots {
@@ -43,11 +43,11 @@
     display: flex;
     list-style: none;
 }
-  
+
 .slick-dots li {
     margin: 0 5px;
 }
-  
+
 .slick-dots button {
     font-size: 12px; /* Adjust as needed */
     border: transparent;
@@ -58,13 +58,22 @@
     background-color: rgba(73, 72, 72, 0.3) !important; /* Gray out non-active dots */
     transition: background-color 0.3s;
 }
-  
+
 .slick-dots button:hover {
     background-color: var(--color-primary) !important;
 }
-  
+
 .slick-dots .slick-active button {
     background-color: var(--color-primary) !important; /* Change background color of active dot */
-
 }
 
+/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+
+@media screen and (max-width: 600px)  {
+    .about__container {
+        height: 100vh;
+    }
+    .job_logo {
+        display: none;
+    }
+  }

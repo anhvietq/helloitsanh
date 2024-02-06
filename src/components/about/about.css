@@ -42,7 +42,43 @@
     margin-bottom: 10rem; /* Increase margin to make the section longer */
 }
 
+/* Add media query for devices with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+  .job_logo {
+      max-width: 100%; /* Make the logo width 100% for smaller devices */
+  }
 
+  .job_logo.bigger {
+      max-width: 100%; /* Make the larger logo width 100% for smaller devices */
+  }
+}
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+
+@media screen and (max-width: 1024px)  {
+  .about_container {
+      grid-template-columns: 1fr;
+      gap: 0;
+  }
+
+  .me {
+    width: 100%;
+    margin: 2rem auto 4rem;
+  }
+  .about_description {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+
+@media screen and (max-width: 600px)  {
+  .about__container {
+      height: 100vh;
+  }
+  .me {
+      display: none;
+  }
+}
 
 
 

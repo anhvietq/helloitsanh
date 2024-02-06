@@ -13,7 +13,7 @@ header {
 
 p{
     text-align: justify;
-    padding: 1rem 10rem 1rem 10rem; /*top right bottom left*/
+    padding: 1rem 5rem 1rem 5rem; /*top right bottom left*/
 }
 
 /* ========== CTA ========== */
@@ -34,7 +34,7 @@ p{
     gap: 0.8rem;
     position: absolute;
     left: 0;
-    bottom: 3rem;
+    bottom: -2rem;
 }
 
 .header__socials::after{
@@ -48,7 +48,7 @@ p{
 .scroll__down {
     position: absolute;
     right: -2.3rem;
-    bottom: 5rem;
+    bottom: 1rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
@@ -58,8 +58,7 @@ p{
 
 @media screen and (max-width: 1024px)  {
     header {
-        height: 68vh;
-         
+        height: 68vh;     
     }
 }
 
@@ -71,5 +70,9 @@ p{
     }
     .header__socials, .scroll__down {
         display: none;
+    }
+    p {
+        font-size: 0.9rem; /* Adjust font size for smaller devices */
+        padding: 1rem 0.5rem; /* Adjust padding for smaller devices */
     }
 }

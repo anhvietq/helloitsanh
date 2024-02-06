@@ -1,13 +1,14 @@
 .project__container {
     display: grid;
-    gap: 1%; /* Adjust the gap as needed */
+    gap: 1%;
+     /* Adjust the gap as needed */
 }
 
 .project_title {
     font-size: 1.8rem;
     position: relative;
+    margin-bottom: 0.5rem; /* Add a bit of space below the title */
 }
-
 
 .project_title::before {
     content: '>';
@@ -17,20 +18,10 @@
     right: calc(100% + 10px); /* Adjust the positioning as needed */
 }
 
-
-
 .project_description {
     text-align: justify;
     align-self: center;
     margin-bottom: 2rem; /* Increase margin to add space between projects */
-}
-
-.pokedex,
-.metaintro,
-.spacelab {
-    display: flex;
-    justify-content: center; /* Center the items horizontally */
-    gap: 2%;
 }
 
 .project__container img {
@@ -39,10 +30,60 @@
     align-self: center; /* Center the image vertically */
 }
 
+.pokedex,
+.metaintro,
+.spacelab {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the items horizontally */
+    gap: 2%;
+}
+
+.pokedex img,
+.metaintro img {
+    width: 20%;
+}
 .spacelab img {
-    width: 35rem;
+    width: 45%; /* Adjust the width for 2 columns in medium and small devices */
 }
 
 #projects {
-    margin-bottom: 20rem; /* Increase margin to make the section longer */
+    margin-top: 2rem;
+    margin-bottom: 15rem; /* Increase margin to make the section longer */
+}
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+
+@media screen and (max-width: 1024px) {
+    .pokedex,
+    .metaintro,
+    .spacelab {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center the items horizontally */
+        gap: 2%;
+    }
+    
+    .pokedex img,
+    .metaintro img {
+        width: 40%; /* Adjust the width for 2 columns in medium and small devices */
+    }
+    
+    .spacelab img {
+        width: 100%; /* Spacelab remains in a single column */
+    }
+}
+/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+
+@media screen and (max-width: 600px) {
+    .project__container {
+       padding-bottom: 30rem;
+    }
+
+    .pokedex,
+    .metaintro,
+    .spacelab {
+        flex-direction: column; /* Change to column layout for small devices */
+        align-items: center; /* Center the items vertically for small devices */
+    }
 }
