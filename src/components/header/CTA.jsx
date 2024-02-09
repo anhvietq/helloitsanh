@@ -1,7 +1,6 @@
 import React from 'react'
 import Resume from '../../assets/Anh_Pham_Resume.pdf'
-import { HiDownload } from "react-icons/hi";
-import { MdOutlineMail } from "react-icons/md";
+
 
 
 const CTA = () => {

@@ -7,7 +7,6 @@
 .project_title {
     font-size: 1.8rem;
     position: relative;
-    margin-bottom: 0.5rem; /* Add a bit of space below the title */
 }
 
 .project_title::before {
@@ -15,6 +14,7 @@
     color: var(--color-primary);
     position: absolute;
     bottom: 0;
+    margin-left: 10px;
     right: calc(100% + 10px); /* Adjust the positioning as needed */
 }
 
@@ -78,6 +78,10 @@
 @media screen and (max-width: 600px) {
     .project__container {
        padding-bottom: 30rem;
+    }
+
+    .project_title::before{
+        padding-left: 10rem
     }
 
     .pokedex,

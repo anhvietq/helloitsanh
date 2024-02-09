@@ -4,7 +4,6 @@ import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { IoBriefcaseOutline } from "react-icons/io5";
-import { TbMessageChatbot } from "react-icons/tb";
 import { useState } from 'react';
 
 
