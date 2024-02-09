@@ -68,6 +68,7 @@ p{
     header {
         height: 100vh;
         padding: 5rem 0 5rem 0;
+        margin-bottom: -8rem;
     }
     .header__socials, .scroll__down {
         display: none;
