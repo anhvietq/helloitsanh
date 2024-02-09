@@ -1,15 +1,15 @@
 .about__container {
-  padding-top: 2rem;
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
+  padding-top: 2rem;
 }
 
 .about_description {
   text-align: justify;
   align-self: center;
-  padding: 2rem 0 2rem 0;
-  margin-top: 0.5rem; /* Adjusted margin-top */
+  padding: 5rem 0 2rem 0;
+
 }
 
 /* ========== ME ========== */
@@ -44,6 +44,7 @@ ul {
   align-items: center;
 }
 
+
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
 @media screen and (max-width: 1024px) {
   .about__container {
@@ -61,14 +62,12 @@ ul {
 /* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
 @media screen and (max-width: 600px) {
   .about__container {
-    margin-top: -25rem;
     display: grid; /* Ensure that the display remains grid for small devices */
-    margin-bottom: 10rem;
+    margin-top: 2rem;
   }
 
   .about_description {
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   
   .me {
