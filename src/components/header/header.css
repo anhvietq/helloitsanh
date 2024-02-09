@@ -11,6 +11,11 @@ header {
     position: relative;
 }
 
+.cursor {
+    color: var(--color-primary);
+    height: 15px;
+}
+
 p{
     text-align: justify;
     padding: 1rem 5rem 1rem 5rem; /*top right bottom left*/
