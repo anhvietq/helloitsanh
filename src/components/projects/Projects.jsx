@@ -70,7 +70,7 @@ implementing a badge system that matches acquired skill badges to relevant job l
       </li>
       <li>
         <GiStarShuriken className='icons'/>
-        Utilized: Figma
+        Utilized: Figma, MaterialUI
       </li>
       </div>
       

@@ -1,9 +1,12 @@
 .experience__container {
     padding: 1rem; /* Adjust padding for smaller devices */
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .job_list {
-    padding: 0; /* Remove padding for smaller devices */
+    padding: 0;
+    align-items: center; /* Remove padding for smaller devices */
 }
 
 .job_logo {
@@ -14,14 +17,14 @@
 }
 
 .job_logo.bigger {
-    max-width: 20rem; /* Set the desired maximum width for the larger logo */
+    max-width: 30rem; /* Set the desired maximum width for the larger logo */
 }
 
 .job_description {
     text-align: justify;
     display: flex;
     flex-direction: column;
-    padding: 0; /* Remove padding for smaller devices */
+    padding: 0; /* Remove padding for smaller devices *
 }
 
 .job_duration {
