@@ -1,7 +1,5 @@
 .experience__container {
     padding: 1rem; /* Adjust padding for smaller devices */
-    margin-right: 2rem;
-    margin-left: 2rem;
 }
 
 .job_list {
@@ -70,11 +68,19 @@
     background-color: var(--color-primary) !important; /* Change background color of active dot */
 }
 
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px) {
+    .experience__container {
+      height: fit-content;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
 /* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
 
 @media screen and (max-width: 600px)  {
-    .about__container {
-        height: 100vh;
+    .experience__container {
+        height: fit-content;
     }
     .job_logo {
         display: none;
