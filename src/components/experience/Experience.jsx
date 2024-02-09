@@ -18,7 +18,7 @@ const Experience = () => {
         'Built responsive landing pages and implementing changes to website while collaborating with cross-functional team of UX/UI designers.',
         'Coordinated with multiple pairs/pods to meet UI test coverage, exceeding client expectations by finishing deliverables on time.'
       ],
-      imageURL: require ("../../assets/LOGO.png")
+      imageURL: require ("../../assets/Companies/SpaceLab.png")
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const Experience = () => {
         'Optimized newsletter subscription emails to align with the enhanced onboarding flow, for improved communication and increased interaction.',
         'Revamped YouTube channel, social media banners, and thumbnails, creating seasonal logos for a more cohesive and inviting online presence.'
       ],
-      imageURL: require ("../../assets/Metaintro.png"),
+      imageURL: require ("../../assets/Companies/Metaintro.png"),
     },
     {
       id: 3,
@@ -43,7 +43,7 @@ const Experience = () => {
         'Working closely with team consisting of UX/UI designers, developers, to create a responsive website for healthcare providers and its patients.',
         'Implementing UI designs, conducting UI validation, and collaborating with backend developers to seamlessly integrate codes, ensuring a user-friendly, functional website.'
       ],
-      imageURL: require ("../../assets/Techfleet.png")
+      imageURL: require ("../../assets/Companies/Techfleet.png")
     },
     {
       id: 4,
@@ -55,7 +55,7 @@ const Experience = () => {
         'Participated in different aspects of IOS development life cycle and ensured all deliverables were met within the set timeframe by following company custom scrum management tool.',
         'Identified and fixed build errors, while cleaning up the onboarding process of the app for future developers. Test deliverables with variety of users such as K12 students and teachers.'
       ],
-      imageURL: require ("../../assets/Resilience.png")
+      imageURL: require ("../../assets/Companies/Resilience.png")
     }
   ];
 
