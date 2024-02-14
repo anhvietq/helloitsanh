@@ -22,7 +22,7 @@ const About = () => {
           I also worked as a
           <b> Contract Designer</b> for   
           <a href='https://www.metaintro.com/' target='_blank' rel="noopener noreferrer"> Metaintro </a>
-          where I redesigned newsletter onboarding experience, as well as social media media appearances.
+          where I redesigned newsletter onboarding experience, as well as social media appearances.
           At the same time, I'm actively learning and enhancing my hard and soft skills.
           <p className='technologies'> Technologies that I have been working with: </p>
           <ul className='technologies_list'>
