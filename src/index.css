@@ -26,9 +26,9 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hiddern; /* has to be scroll, not auto */
-    -webkit-overflow-scrolling: touch;
+    width: auto;
 }
+
 
 ::-webkit-scrollbar {
     display: none;   

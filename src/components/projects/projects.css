@@ -20,9 +20,11 @@
 }
 
 .project_description {
-    text-align: justify;
     align-self: center;
-    margin-bottom: 2rem; /* Increase margin to add space between projects */
+    padding-bottom: 16px;
+    padding-left: 20px;
+    position: relative;
+
 }
 
 .project__container img {
