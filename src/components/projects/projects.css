@@ -7,6 +7,7 @@
 .project_title {
     font-size: 1.8rem;
     position: relative;
+
 }
 
 .project_title::before {
@@ -81,7 +82,11 @@
     }
 
     .project_title::before{
-        padding-left: 10rem
+        top: 0%;
+    }
+
+    .project_header {
+        padding-left: 5%;
     }
 
     .pokedex,

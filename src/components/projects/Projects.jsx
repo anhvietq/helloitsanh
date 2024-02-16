@@ -27,9 +27,11 @@ const Projects = () => {
         </div>
         <div className='container project__container'>
           {/* Project 1 */}
+          <div className='project_header'>
           <h4 className='project_title'> 
           Metaintro Resume Wallet 
           </h4>
+          </div>
           <div className='metaintro'>
         <img src={METAINTRO1} alt ='metaintro' />
         <img src={METAINTRO2} alt ='metaintro' />
@@ -54,9 +56,11 @@ implementing a badge system that matches acquired skill badges to relevant job l
       </div>
     
       {/* Project 2 */}
+      <div className='project_header'>
       <h4 className='project_title'> 
-      Metaintro Onboarding 
+      Metaintro Newsletter Onboarding 
       </h4>
+      </div>
       <div className='metaintro'>
         <img src={METAINTRO11} alt ='metaintro' />
         <img src={METAINTRO22} alt ='metaintro' />
@@ -75,7 +79,9 @@ implementing a badge system that matches acquired skill badges to relevant job l
       </div>
       
       {/* Project 3 */}
+      <div className='project_header'>
       <h4 className='project_title'> Spacelab Landing Page </h4>
+      </div>
       <div className='spacelab'>
         <img src={SPACELAB} alt ='spacelab' />
         <img src={SPACELAB2} alt ='spacelab' />
@@ -92,7 +98,9 @@ implementing a badge system that matches acquired skill badges to relevant job l
       </div>
 
        {/* Project 4 */}
+       <div className='project_header'>
        <h4 className='project_title'> The PokeDex </h4>
+       </div>
        <div className='pokedex'>
         <img src={POKEDEX} alt ='pokedex' />
         <img src={POKEDEX2} alt ='pokedex' />

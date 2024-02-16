@@ -26,6 +26,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hiddern; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
 }
 
 ::-webkit-scrollbar {
@@ -78,8 +80,6 @@ section {
     margin: auto;
     left: 0%;
     right: 0%;
-    
-   
 }
 
 .section_title{
