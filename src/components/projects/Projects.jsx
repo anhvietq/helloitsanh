@@ -1,132 +1,158 @@
-import React from 'react'
-import './projects.css'
-import METAINTRO1 from '../../assets/Projects/MWallet1.png'
-import METAINTRO2 from '../../assets/Projects/MWallet2.png'
-import METAINTRO3 from '../../assets/Projects/MWallet3.png'
-import METAINTRO4 from '../../assets/Projects/MWallet4.png'
-import POKEDEX from '../../assets/Projects/Pokedex.png'
-import POKEDEX2 from '../../assets/Projects/Pokedex2.png'
-import POKEDEX4 from '../../assets/Projects/Pokedex4.png'
-import POKEDEX5 from '../../assets/Projects/Pokedex5.png'
-import METAINTRO11 from '../../assets/Projects/MNewsletter1.png'
-import METAINTRO22 from '../../assets/Projects/MNewsletter2.png'
-import METAINTRO33 from '../../assets/Projects/MNewsletter3.png'
-import METAINTRO44 from '../../assets/Projects/MNewsletter4.png'
-import SPACELAB from '../../assets/Projects/SpaceLab.png'
-import SPACELAB2 from '../../assets/Projects/SpaceLab2.png'
-import { GiStarShuriken} from 'react-icons/gi';
+import React, { useState } from 'react';
+import './projects.css';
+import { GiStarShuriken } from 'react-icons/gi';
+import { BsGithub } from "react-icons/bs";
 
-
-
+// Import project images
+import MWallet1 from '../../assets/Projects/MWallet1.png';
+import MWallet2 from '../../assets/Projects/MWallet2.png';
+import MWallet3 from '../../assets/Projects/MWallet3.png';
+import MWallet4 from '../../assets/Projects/MWallet4.png';
+import Pokedex1 from '../../assets/Projects/Pokedex/Pokedex.png';
+import Pokedex2 from '../../assets/Projects/Pokedex/Pokedex2.png';
+import Pokedex4 from '../../assets/Projects/Pokedex/Pokedex4.png';
+import Pokedex5 from '../../assets/Projects/Pokedex/Pokedex5.png';
+import MNewsletter1 from '../../assets/Projects/MNewsletter1.png';
+import MNewsletter2 from '../../assets/Projects/MNewsletter2.png';
+import MNewsletter3 from '../../assets/Projects/MNewsletter3.png';
+import MNewsletter4 from '../../assets/Projects/MNewsletter4.png';
+import SpaceLab1 from '../../assets/Projects/SpaceLab/SpaceLab.png';
+import SpaceLab2 from '../../assets/Projects/SpaceLab/SpaceLab2.png';
 
 const Projects = () => {
+  const [currentTab, setCurrentTab] = useState('developing');
+
+  const handleTabChange = (tab) => {
+    setCurrentTab(tab);
+  };
+
+  // Array of developing projects
+  const developingProjects = [
+    { 
+      id: 1, 
+      title: 'Metaintro Resume Wallet',
+      descriptions: [
+        'Developed a Web3 Chrome extension for instant job applications, seamlessly connecting customizable digital wallets and securely storing user documents and information.',
+        'Collaborated with a UX/UI designer to integrate designs and functionality into the extension, while also implementing a badge system that matches acquired skill badges to relevant job listings.'
+      ],
+      techStack: 'Utilized: React.js, CSS',
+      projectLink: 'https://github.com/anhvietq/resumewallet.m',
+      images: [MWallet1, MWallet2, MWallet3, MWallet4]
+    },
+    { 
+      id: 2,
+      title: 'Spacelab Landing Page',
+      descriptions: ['Built Spacelab Landing Page to increase subscription rates.'],
+      techStack: 'Utilized: React.js, SCSS',
+      projectLink: 'https://github.com/spacelabdev/spacelab-react',
+      images: [SpaceLab1, SpaceLab2]
+    },
+    { 
+      id: 3,
+      title: 'The Pokédex',
+      descriptions: [
+        'The Pokédex is a digital encyclopedia that stores and records information about known Pokemon species.',
+        'Utilized PokéAPI alongside with other APIs to lay out basic information about Pokemon generations. Each generation has its own section with its starter Pokemons for easier access and app navigation.'
+      ],
+      techStack: 'Utilized: ExpoGo, React Native and JavaScript.',
+      projectLink: 'https://github.com/anhvietq/Pokedex',
+      images: [Pokedex1, Pokedex2, Pokedex4, Pokedex5]
+    }
+  ];
+
+  // Array of designing projects
+  const designingProjects = [
+    {
+      id: 1,
+      title: 'Metaintro Newsletter Onboarding',
+      descriptions: ['Redesigned Metaintro Newsletter Onboarding experience.'],
+      techStack: 'Utilized: Figma, MaterialUI',
+      projectLink: 'https://www.metaintro.net/',
+      images: [MNewsletter1, MNewsletter2, MNewsletter3, MNewsletter4]
+    },
+    // Add other designing projects here if needed
+  ];
+
   return (
     <section id='projects'>
       <div className='section_title'>
         <h2> Projects </h2>
-        </div>
-        <div className='container project__container'>
-          {/* Project 1 */}
-          <div className='project_header'>
-          <h4 className='project_title'> 
-          Metaintro Resume Wallet 
-          </h4>
+      </div>
+      <div className='project_type'>
+        <a
+          className={`btn ${currentTab === 'developing' ? 'active' : ''}`}
+          onClick={() => handleTabChange('developing')}
+        >
+          Developing Projects
+        </a>
+        <a
+          className={`btn ${currentTab === 'designing' ? 'active' : ''}`}
+          onClick={() => handleTabChange('designing')}
+        >
+          Designing Projects
+       </a>
+      </div>
+      <div className='container project__container'>
+        {/* Developing Projects */}
+        {currentTab === 'developing' && developingProjects.map(project => (
+          <div key={project.id} className='project_card'>
+            <h4 className='project_title'>{project.title}</h4>
+            <div className={`project_images ${project.id === 1 ? 'bigger':''}`}>
+              {project.images.map((image, index) => (
+                <img key={index} src={image} alt={`Project ${project.id} Image ${index + 1}`} />
+              ))}
+            </div>
+            <div className='project_description'>
+              {project.descriptions.map((desc, index) => (
+                <p key={index}>
+                  <GiStarShuriken className='icons' />
+                  {desc}
+                </p>
+              ))}
+              <p>
+                <GiStarShuriken className='icons' />
+                {project.techStack}
+              </p>
+              <span className='project_link'>
+                <a className='btn' href={project.projectLink} target='_blank' rel='noopener noreferrer'>
+                  <BsGithub className='icons' /> Github
+                </a>
+              </span>
+            </div>
           </div>
-          <div className='metaintro'>
-        <img src={METAINTRO1} alt ='metaintro' />
-        <img src={METAINTRO2} alt ='metaintro' />
-        <img src={METAINTRO3} alt ='metaintro' />
-        <img src={METAINTRO4} alt ='metaintro' />
-        </div>
-      <div className='project_description'>
-      <li>
-        <GiStarShuriken className='icons'/>
-        Developed a Web3 Chrome extension for instant job applications, seamlessly connecting customizable digital
-wallets and securely storing user documents and information.
-      </li>
-      <li>
-        <GiStarShuriken className='icons'/>
-        Collaborated with a UX/UI designer to integrate designs and functionality into the extension, while also
-implementing a badge system that matches acquired skill badges to relevant job listings.
-      </li>
-      <li>
-        <GiStarShuriken className='icons'/>
-        Utilized: React.js, CSS
-      </li>
-      </div>
-    
-      {/* Project 2 */}
-      <div className='project_header'>
-      <h4 className='project_title'> 
-      Metaintro Newsletter Onboarding 
-      </h4>
-      </div>
-      <div className='metaintro'>
-        <img src={METAINTRO11} alt ='metaintro' />
-        <img src={METAINTRO22} alt ='metaintro' />
-        <img src={METAINTRO33} alt ='metaintro' />
-        <img src={METAINTRO44} alt ='metaintro' />
-        </div>
-      <div className='project_description'>
-      <li>
-        <GiStarShuriken className='icons'/>
-        Redesigned Metaintro Newsletter Onboarding experience.
-      </li>
-      <li>
-        <GiStarShuriken className='icons'/>
-        Utilized: Figma, MaterialUI
-      </li>
-      </div>
-      
-      {/* Project 3 */}
-      <div className='project_header'>
-      <h4 className='project_title'> Spacelab Landing Page </h4>
-      </div>
-      <div className='spacelab'>
-        <img src={SPACELAB} alt ='spacelab' />
-        <img src={SPACELAB2} alt ='spacelab' />
-        </div>
-      <div className='project_description'>
-      <li>
-        <GiStarShuriken className='icons'/>
-        Built Spacelab Landing Page to increase subscription rates.
-      </li>
-      <li>
-        <GiStarShuriken className='icons'/>
-        Utilized: React.js, SCSS
-      </li>
-      </div>
-
-       {/* Project 4 */}
-       <div className='project_header'>
-       <h4 className='project_title'> The PokeDex </h4>
-       </div>
-       <div className='pokedex'>
-        <img src={POKEDEX} alt ='pokedex' />
-        <img src={POKEDEX2} alt ='pokedex' />
-        <img src={POKEDEX4} alt ='pokedex' />
-        <img src={POKEDEX5} alt ='pokedex' />
-      </div>
-      <div className='project_description'>
-      <li>
-        <GiStarShuriken className='icons'/>
-      The Pokédex is a digital encyclopedia that stores and records information about known Pokemon species.
-      </li>
-      <li>
-        <GiStarShuriken className='icons'/>
-        Utilized PokéAPI alongside with other APIs to lay out basic information about Pokemon generations. Each
-        generation has its own section with its starter Pokemons for easier access and app navigation.
-      </li>
-      <li>
-        <GiStarShuriken className='icons'/>
-        Utilized: ExpoGo, React Native and JavaScript.
-      </li>
-      </div>
-      
-
+        ))}
+        
+        {/* Designing Projects */}
+        {currentTab === 'designing' && designingProjects.map(project => (
+          <div key={project.id} className='project_card'>
+            <h4 className='project_title'>{project.title}</h4>
+            <div className='project_description'>
+              {project.descriptions.map((desc, index) => (
+                <p key={index}>
+                  <GiStarShuriken className='icons' />
+                  {desc}
+                </p>
+              ))}
+              <p>
+                <GiStarShuriken className='icons' />
+                {project.techStack}
+              </p>
+              <span className='project_link'>
+                <a className='btn' href={project.projectLink} target='_blank' rel='noopener noreferrer'>
+                  <BsGithub className='icons' /> Github
+                </a>
+              </span>
+            </div>
+            <div className='project_images'>
+              {project.images.map((image, index) => (
+                <img key={index} src={image} alt={`Project ${project.id} Image ${index + 1}`} />
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

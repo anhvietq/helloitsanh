@@ -15,7 +15,7 @@
     --color-bg: #04052E;
     --color-bg-variant: #c2c5aa;
     --color-primary: #8f98f9;
-    --color-primary-variant: #rgba(77, 181, 255, 0.4);
+    --color-primary-variant: #646fee;
     --color-white: #fff;
     --color-light: #rgba(255, 255, 255, 0.6);
 
@@ -46,6 +46,8 @@ body {
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
+    flex-direction: column;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -140,7 +142,7 @@ img {
 
 .icons {
     color: var(--color-primary);
-    margin-right: 15px;
+    margin-right: 10px;
   }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
@@ -160,6 +162,7 @@ img {
 @media screen and (max-width: 600px)  {
     .container {
         width: var(--container-width-sm); 
+        margin: 0 auto;
     }
 
     section > h2 {

@@ -33,7 +33,7 @@
 
 .job_description li {
     position: relative;
-    padding-bottom: 16px;
+    padding-bottom: 10px;
     padding-left: 10px; /* Adjust padding for smaller devices */
     padding-right: 10px; /* Adjust padding for smaller devices */
 }
