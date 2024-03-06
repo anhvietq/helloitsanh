@@ -51,7 +51,7 @@ a.active {
 }
 
 .project_link {
-    margin-top: 2rem;
+    margin: 2rem 0rem 2rem 0;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
