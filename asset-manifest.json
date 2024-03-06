@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.84e6a9a0.chunk.css",
-    "main.js": "/static/js/main.5484c35f.chunk.js",
-    "main.js.map": "/static/js/main.5484c35f.chunk.js.map",
+    "main.css": "/static/css/main.2454f712.chunk.css",
+    "main.js": "/static/js/main.4feba1df.chunk.js",
+    "main.js.map": "/static/js/main.4feba1df.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6cf4bfbe.js",
     "runtime-main.js.map": "/static/js/runtime-main.6cf4bfbe.js.map",
     "static/css/2.7f5860a0.chunk.css": "/static/css/2.7f5860a0.chunk.css",
-    "static/js/2.0fa549aa.chunk.js": "/static/js/2.0fa549aa.chunk.js",
-    "static/js/2.0fa549aa.chunk.js.map": "/static/js/2.0fa549aa.chunk.js.map",
+    "static/js/2.44b99f9b.chunk.js": "/static/js/2.44b99f9b.chunk.js",
+    "static/js/2.44b99f9b.chunk.js.map": "/static/js/2.44b99f9b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cc1415232b13b322811fa094ec488ebd.js": "/precache-manifest.cc1415232b13b322811fa094ec488ebd.js",
+    "precache-manifest.f2a807ad6e890e35155ae403af2b1264.js": "/precache-manifest.f2a807ad6e890e35155ae403af2b1264.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.7f5860a0.chunk.css.map": "/static/css/2.7f5860a0.chunk.css.map",
-    "static/css/main.84e6a9a0.chunk.css.map": "/static/css/main.84e6a9a0.chunk.css.map",
-    "static/js/2.0fa549aa.chunk.js.LICENSE.txt": "/static/js/2.0fa549aa.chunk.js.LICENSE.txt",
+    "static/css/main.2454f712.chunk.css.map": "/static/css/main.2454f712.chunk.css.map",
+    "static/js/2.44b99f9b.chunk.js.LICENSE.txt": "/static/js/2.44b99f9b.chunk.js.LICENSE.txt",
     "static/media/Anh_Pham_Resume.pdf": "/static/media/Anh_Pham_Resume.b9610323.pdf",
     "static/media/MNewsletter1.png": "/static/media/MNewsletter1.dbb97076.png",
     "static/media/MNewsletter2.png": "/static/media/MNewsletter2.5bb02483.png",
@@ -23,6 +23,7 @@
     "static/media/MWallet2.png": "/static/media/MWallet2.6f8b409e.png",
     "static/media/MWallet3.png": "/static/media/MWallet3.075bcc0d.png",
     "static/media/MWallet4.png": "/static/media/MWallet4.f28269e6.png",
+    "static/media/MYoutube.png": "/static/media/MYoutube.0ca68639.png",
     "static/media/Metaintro.png": "/static/media/Metaintro.5c3aa1a6.png",
     "static/media/Pokedex.png": "/static/media/Pokedex.73a18af2.png",
     "static/media/Pokedex2.png": "/static/media/Pokedex2.3e521e7f.png",
@@ -38,8 +39,8 @@
   "entrypoints": [
     "static/js/runtime-main.6cf4bfbe.js",
     "static/css/2.7f5860a0.chunk.css",
-    "static/js/2.0fa549aa.chunk.js",
-    "static/css/main.84e6a9a0.chunk.css",
-    "static/js/main.5484c35f.chunk.js"
+    "static/js/2.44b99f9b.chunk.js",
+    "static/css/main.2454f712.chunk.css",
+    "static/js/main.4feba1df.chunk.js"
   ]
 }
