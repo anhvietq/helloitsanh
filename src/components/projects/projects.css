@@ -8,6 +8,7 @@
     display: flex;
     gap: 1.2rem;
     justify-content: center;
+    padding: 2rem 0rem 2rem 0rem
 }
 
 a.active {
@@ -34,13 +35,17 @@ a.active {
 .project_description {
     align-self: center;
     padding-bottom: 16px;
-    padding-left: 20px;
     position: relative;
 
 }
 
+.project_description p {
+    padding: 0rem 2rem 0rem 2rem;
+}
+
 .project__container img {
-    width: 15rem;
+    display: flex;
+    width: 20%;
     padding: 0rem 0 1rem 0; /* Adjust padding as needed */
     align-self: center; /* Center the image vertically */
 }
@@ -52,13 +57,21 @@ a.active {
     justify-content: center;
     }
 
-.project_images {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: center; /* Center the items horizontally */
-    gap: 2%;
-}
+    .project_images {
+        display: flex;
+        justify-content: center; /* Center the items horizontally */
+        gap: 2%;
+        padding: 2rem 0rem 2rem 0;
+    }
 
+    .bigger-images img {
+        display: flex;
+        width: 90%;
+        max-width: 600px; /* Adjust the width as needed */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
 
 
 #projects {
@@ -69,23 +82,14 @@ a.active {
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
 
 @media screen and (max-width: 1024px) {
-    .pokedex,
-    .metaintro,
-    .spacelab {
+    .project_images {
         display: flex;
         flex-wrap: wrap; /* Allow items to wrap to the next line */
         justify-content: center; /* Center the items horizontally */
         gap: 2%;
     }
     
-    .pokedex img,
-    .metaintro img {
-        width: 40%; /* Adjust the width for 2 columns in medium and small devices */
-    }
-    
-    .spacelab img {
-        width: 100%; /* Spacelab remains in a single column */
-    }
+  
 }
 /* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
 
@@ -102,9 +106,7 @@ a.active {
         padding-left: 5%;
     }
 
-    .pokedex,
-    .metaintro,
-    .spacelab {
+    .project_images {
         flex-direction: column; /* Change to column layout for small devices */
         align-items: center; /* Center the items vertically for small devices */
     }

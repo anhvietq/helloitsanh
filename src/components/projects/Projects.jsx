@@ -2,20 +2,24 @@ import React, { useState } from 'react';
 import './projects.css';
 import { GiStarShuriken } from 'react-icons/gi';
 import { BsGithub } from "react-icons/bs";
+import { FaLink } from "react-icons/fa";
+
+
 
 // Import project images
-import MWallet1 from '../../assets/Projects/MWallet1.png';
-import MWallet2 from '../../assets/Projects/MWallet2.png';
-import MWallet3 from '../../assets/Projects/MWallet3.png';
-import MWallet4 from '../../assets/Projects/MWallet4.png';
+import MWallet1 from '../../assets/Projects/Metaintro/MWallet1.png';
+import MWallet2 from '../../assets/Projects/Metaintro/MWallet2.png';
+import MWallet3 from '../../assets/Projects/Metaintro/MWallet3.png';
+import MWallet4 from '../../assets/Projects/Metaintro/MWallet4.png';
+import MNewsletter1 from '../../assets/Projects/Metaintro/MNewsletter1.png';
+import MNewsletter2 from '../../assets/Projects/Metaintro/MNewsletter2.png';
+import MNewsletter3 from '../../assets/Projects/Metaintro/MNewsletter3.png';
+import MNewsletter4 from '../../assets/Projects/Metaintro/MNewsletter4.png';
+import MYoutube from '../../assets/Projects/Metaintro/MYoutube.png';
 import Pokedex1 from '../../assets/Projects/Pokedex/Pokedex.png';
 import Pokedex2 from '../../assets/Projects/Pokedex/Pokedex2.png';
 import Pokedex4 from '../../assets/Projects/Pokedex/Pokedex4.png';
 import Pokedex5 from '../../assets/Projects/Pokedex/Pokedex5.png';
-import MNewsletter1 from '../../assets/Projects/MNewsletter1.png';
-import MNewsletter2 from '../../assets/Projects/MNewsletter2.png';
-import MNewsletter3 from '../../assets/Projects/MNewsletter3.png';
-import MNewsletter4 from '../../assets/Projects/MNewsletter4.png';
 import SpaceLab1 from '../../assets/Projects/SpaceLab/SpaceLab.png';
 import SpaceLab2 from '../../assets/Projects/SpaceLab/SpaceLab2.png';
 
@@ -70,7 +74,14 @@ const Projects = () => {
       projectLink: 'https://www.metaintro.net/',
       images: [MNewsletter1, MNewsletter2, MNewsletter3, MNewsletter4]
     },
-    // Add other designing projects here if needed
+    {
+      id: 2,
+      title: 'Metaintro Youtube Thumbnails',
+      descriptions: ['Redesigned Metaintro Youtube Thumbnails.'],
+      techStack: 'Utilized: Figma, Canva',
+      projectLink: 'https://www.youtube.com/@metaintro',
+      images: [MYoutube]
+    }
   ];
 
   return (
@@ -95,12 +106,12 @@ const Projects = () => {
       <div className='container project__container'>
         {/* Developing Projects */}
         {currentTab === 'developing' && developingProjects.map(project => (
-          <div key={project.id} className='project_card'>
+          <div key={project.id}>
             <h4 className='project_title'>{project.title}</h4>
-            <div className={`project_images ${project.id === 1 ? 'bigger':''}`}>
-              {project.images.map((image, index) => (
-                <img key={index} src={image} alt={`Project ${project.id} Image ${index + 1}`} />
-              ))}
+            <div className={`project_images ${project.id === 2 ? 'bigger-images' : ''}`}>
+          {project.images.map((image, index) => (
+             <img key={index} src={image} alt={`Project ${project.id} Image ${index + 1}`} />
+               ))}
             </div>
             <div className='project_description'>
               {project.descriptions.map((desc, index) => (
@@ -126,6 +137,11 @@ const Projects = () => {
         {currentTab === 'designing' && designingProjects.map(project => (
           <div key={project.id} className='project_card'>
             <h4 className='project_title'>{project.title}</h4>
+            <div className={`project_images ${project.id === 2 ? 'bigger-images' : ''}`}>
+          {project.images.map((image, index) => (
+             <img key={index} src={image} alt={`Project ${project.id} Image ${index + 1}`} />
+               ))}
+            </div>
             <div className='project_description'>
               {project.descriptions.map((desc, index) => (
                 <p key={index}>
@@ -137,17 +153,12 @@ const Projects = () => {
                 <GiStarShuriken className='icons' />
                 {project.techStack}
               </p>
-              <span className='project_link'>
+            </div>
+            <span className='project_link'>
                 <a className='btn' href={project.projectLink} target='_blank' rel='noopener noreferrer'>
-                  <BsGithub className='icons' /> Github
+                  <FaLink className='icons' /> Link
                 </a>
               </span>
-            </div>
-            <div className='project_images'>
-              {project.images.map((image, index) => (
-                <img key={index} src={image} alt={`Project ${project.id} Image ${index + 1}`} />
-              ))}
-            </div>
           </div>
         ))}
       </div>
