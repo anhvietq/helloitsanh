@@ -20,6 +20,7 @@ a.active {
 .project_title {
     font-size: 1.8rem;
     position: relative;
+    padding-left: 10px;
 
 }
 
@@ -29,7 +30,7 @@ a.active {
     position: absolute;
     bottom: 0;
     margin-left: 10px;
-    right: calc(100% + 10px); /* Adjust the positioning as needed */
+    right: calc(100%); /* Adjust the positioning as needed */
 }
 
 .project_description {
