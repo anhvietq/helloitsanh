@@ -94,13 +94,13 @@ const Projects = () => {
           className={`btn ${currentTab === 'developing' ? 'active' : ''}`}
           onClick={() => handleTabChange('developing')}
         >
-          Developing Projects
+          Developing
         </a>
         <a
           className={`btn ${currentTab === 'designing' ? 'active' : ''}`}
           onClick={() => handleTabChange('designing')}
         >
-          Designing Projects
+          Designing
        </a>
       </div>
       <div className='container project__container'>
@@ -108,7 +108,7 @@ const Projects = () => {
         {currentTab === 'developing' && developingProjects.map(project => (
           <div key={project.id}>
             <h4 className='project_title'>{project.title}</h4>
-            <div className={`project_images ${project.id === 2 ? 'bigger-images' : ''}`}>
+            <div className={`project_images ${project.id === 2 ? 'spacelab' : ''}`}>
           {project.images.map((image, index) => (
              <img key={index} src={image} alt={`Project ${project.id} Image ${index + 1}`} />
                ))}
@@ -137,7 +137,7 @@ const Projects = () => {
         {currentTab === 'designing' && designingProjects.map(project => (
           <div key={project.id} className='project_card'>
             <h4 className='project_title'>{project.title}</h4>
-            <div className={`project_images ${project.id === 2 ? 'bigger-images' : ''}`}>
+            <div className={`project_images ${project.id === 2 ? 'bigger_images' : ''}`}>
           {project.images.map((image, index) => (
              <img key={index} src={image} alt={`Project ${project.id} Image ${index + 1}`} />
                ))}

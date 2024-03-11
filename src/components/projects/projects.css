@@ -8,7 +8,7 @@
     display: flex;
     gap: 1.2rem;
     justify-content: center;
-    padding: 2rem 0rem 2rem 0rem
+    padding: 2rem 2rem 2rem 2rem
 }
 
 a.active {
@@ -67,15 +67,20 @@ a.active {
         padding: 2rem 0rem 2rem 0;
     }
 
-    .bigger-images img {
-        display: flex;
-        width: 90%;
-        max-width: 600px; /* Adjust the width as needed */
+    .spacelab img {
+        width: 60%;/* Adjust the width as needed */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+
+      }
+
+      .bigger_images img {
+        width: 80%;/* Adjust the width as needed */
         height: auto;
         display: block;
         margin: 0 auto;
       }
-
 
 #projects {
     margin-top: 2rem;
@@ -91,7 +96,6 @@ a.active {
         justify-content: center; /* Center the items horizontally */
         gap: 2%;
     }
-    
   
 }
 /* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
@@ -114,9 +118,10 @@ a.active {
         align-items: center; /* Center the items vertically for small devices */
     }
 
-    .pokedex,
-    .metaintro,
-    .spacelab img { 
-        align-items: center;
+  .project__container img { 
+    display: flex;
+    width: 50%;
+    padding: 0rem 0 1rem 0;
+    align-self: center;
     }
 }
