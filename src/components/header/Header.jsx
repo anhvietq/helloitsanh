@@ -39,9 +39,12 @@ const Header = () => {
         </h2>
         <h2>It's Anh </h2>
         <h5 className='text-light'>Front-end Developer and UX/UI Designer </h5>
-        <p> I am a self-taught Frontend Developer with Chemical Engineering background from Vietnam.
-          I have always been intrigued by all things techie and their complexities.
-          Currently actively participating in projects, where I collaborate with different teams, including UX/UI designers, to bring their creations to life.
+        <p> As a self-taught Frontend Developer with a strong foundation in UX/UI design, 
+          I bring a unique blend of technical expertise and creative insight to every project. 
+          My journey from a Chemical Engineering background to the dynamic world of web development 
+          has fueled my passion for crafting seamless, user-centric digital experiences. 
+          Collaborating with diverse teams, I strive to merge aesthetic design with robust functionality, 
+          turning visionary concepts into engaging realities.
         </p>
         <CTA />
         <HeaderSocials />

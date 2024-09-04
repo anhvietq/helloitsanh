@@ -22,6 +22,10 @@ import Pokedex4 from '../../assets/Projects/Pokedex/Pokedex4.png';
 import Pokedex5 from '../../assets/Projects/Pokedex/Pokedex5.png';
 import SpaceLab1 from '../../assets/Projects/SpaceLab/SpaceLab.png';
 import SpaceLab2 from '../../assets/Projects/SpaceLab/SpaceLab2.png';
+import Sprintfolio1 from '../../assets/Projects/Sprintfolio/Sprintfolio1.png';
+import Sprintfolio2 from '../../assets/Projects/Sprintfolio/Sprintfolio2.png';
+import Sprintfolio3 from '../../assets/Projects/Sprintfolio/Sprintfolio3.png';
+
 
 const Projects = () => {
   const [currentTab, setCurrentTab] = useState('developing');
@@ -32,27 +36,38 @@ const Projects = () => {
 
   // Array of developing projects
   const developingProjects = [
-    { 
-      id: 1, 
-      title: 'Metaintro Resume Wallet',
+    {
+      id: 1,
+      title: 'Sprintfolio Case Study Website',
       descriptions: [
-        'Developed a Web3 Chrome extension for instant job applications, seamlessly connecting customizable digital wallets and securely storing user documents and information.',
+        'Re-develop the front-end for Sprintfolio, aiding UX/UI Designers with their case studies using their own AI mentor, Lio.',
+        'Collaborated with back-end developers, and UX/UI designers to build out and design new front-end functionality.'
+      ],
+      techStack: 'Utilized: React.js, CSS',
+      projectLink: 'https://newcareer.sprintfolio.com',
+      images: [Sprintfolio1, Sprintfolio2, Sprintfolio3]
+    },
+    {
+      id: 2,
+      title: 'Chrome Extension Resume Pocket',
+      descriptions: [
+        'Developed a Web3 Chrome extension for instant job applications, seamlessly connecting customizable and securely storing user documents and information.',
         'Collaborated with a UX/UI designer to integrate designs and functionality into the extension, while also implementing a badge system that matches acquired skill badges to relevant job listings.'
       ],
       techStack: 'Utilized: React.js, CSS',
       projectLink: 'https://github.com/anhvietq/resumewallet.m',
       images: [MWallet1, MWallet2, MWallet3, MWallet4]
     },
-    { 
-      id: 2,
+    {
+      id: 3,
       title: 'Spacelab Landing Page',
       descriptions: ['Built Spacelab Landing Page to increase subscription rates.'],
       techStack: 'Utilized: React.js, SCSS',
       projectLink: 'https://github.com/spacelabdev/spacelab-react',
       images: [SpaceLab1, SpaceLab2]
     },
-    { 
-      id: 3,
+    {
+      id: 4,
       title: 'The Pokédex',
       descriptions: [
         'The Pokédex is a digital encyclopedia that stores and records information about known Pokemon species.',
@@ -101,17 +116,17 @@ const Projects = () => {
           onClick={() => handleTabChange('designing')}
         >
           Designing
-       </a>
+        </a>
       </div>
       <div className='container project__container'>
         {/* Developing Projects */}
         {currentTab === 'developing' && developingProjects.map(project => (
           <div key={project.id}>
             <h4 className='project_title'>{project.title}</h4>
-            <div className={`project_images ${project.id === 2 ? 'spacelab' : ''}`}>
-          {project.images.map((image, index) => (
-             <img key={index} src={image} alt={`Project ${project.id} Image ${index + 1}`} />
-               ))}
+            <div className={`project_images ${project.id === 1 || project.id === 3 ? 'website' : ''}`}>
+              {project.images.map((image, index) => (
+                <img key={index} src={image} alt={`Project ${project.id} Image ${index + 1}`} />
+              ))}
             </div>
             <div className='project_description'>
               {project.descriptions.map((desc, index) => (
@@ -125,22 +140,28 @@ const Projects = () => {
                 {project.techStack}
               </p>
               <span className='project_link'>
-                <a className='btn' href={project.projectLink} target='_blank' rel='noopener noreferrer'>
-                  <BsGithub className='icons' /> Github
-                </a>
+                {project.id === 1 ? (
+                  <a className='btn' href={project.projectLink} target='_blank' rel='noopener noreferrer'>
+                    <FaLink className='icons' /> Link
+                  </a>
+                ) : (
+                  <a className='btn' href={project.projectLink} target='_blank' rel='noopener noreferrer'>
+                    <BsGithub className='icons' /> Github
+                  </a>
+                )}
               </span>
             </div>
           </div>
         ))}
-        
+
         {/* Designing Projects */}
         {currentTab === 'designing' && designingProjects.map(project => (
           <div key={project.id} className='project_card'>
             <h4 className='project_title'>{project.title}</h4>
             <div className={`project_images ${project.id === 2 ? 'bigger_images' : ''}`}>
-          {project.images.map((image, index) => (
-             <img key={index} src={image} alt={`Project ${project.id} Image ${index + 1}`} />
-               ))}
+              {project.images.map((image, index) => (
+                <img key={index} src={image} alt={`Project ${project.id} Image ${index + 1}`} />
+              ))}
             </div>
             <div className='project_description'>
               {project.descriptions.map((desc, index) => (
@@ -155,10 +176,10 @@ const Projects = () => {
               </p>
             </div>
             <span className='project_link'>
-                <a className='btn' href={project.projectLink} target='_blank' rel='noopener noreferrer'>
-                  <FaLink className='icons' /> Link
-                </a>
-              </span>
+              <a className='btn' href={project.projectLink} target='_blank' rel='noopener noreferrer'>
+                <FaLink className='icons' /> Link
+              </a>
+            </span>
           </div>
         ))}
       </div>

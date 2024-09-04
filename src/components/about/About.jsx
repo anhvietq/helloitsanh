@@ -17,10 +17,11 @@ const About = () => {
         <div className='about_description'>
           I am currently a 
           <b> Front-end Developer</b> at 
-          <a href='https://spacelab.space' target='_blank' rel="noopener noreferrer"> Space Lab </a>
-          , working with the front-end development team. 
+          <a href='https://spacelab.space' target='_blank' rel="noopener noreferrer"> Space Lab</a>
+          , working with the front-end development team, and an <b>UI Developer</b> at 
+          <a href='https://sprintfolio.com' target='_blank' rel="noopener noreferrer"> Sprintfolio</a>.
           I also worked as a
-          <b> Contract Designer</b> for   
+          <b> UX/UI Designer</b> for   
           <a href='https://www.metaintro.com/' target='_blank' rel="noopener noreferrer"> Metaintro </a>
           where I redesigned newsletter onboarding experience, as well as social media appearances.
           At the same time, I'm actively learning and enhancing my hard and soft skills.

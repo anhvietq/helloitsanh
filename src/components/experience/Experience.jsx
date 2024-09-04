@@ -10,6 +10,18 @@ const Experience = () => {
   const carouselItems = [
     {
       id: 1,
+      jobTitle: 'UI Developer @',
+      company: 'Sprintfolio',
+      companyURL: 'https://sprintfolio.com',
+      jobDuration: 'March 2024 - April 2024',
+      description: [
+        'Developed a new design for the company website, which included a new logo and improved the overall look and feel of the website.',
+        'Collaborated with back-end developers to implement new functionalities for Sprintfolio`s case study website, globally assisting UX/UI designers with their portfolios through Sprintfolio`s AI mentor, Lio'
+      ],
+      imageURL: require ("../../assets/Companies/Sprintfolio.png")
+    },
+    {
+      id: 2,
       jobTitle: 'Front-end Developer @',
       company: 'SpaceLab',
       companyURL:'https://spacelab.space',
@@ -21,7 +33,7 @@ const Experience = () => {
       imageURL: require ("../../assets/Companies/SpaceLab.png")
     },
     {
-      id: 2,
+      id: 3,
       jobTitle: 'UX/UI Designer @',
       company: 'Metaintro',
       companyURL:'https://www.metaintro.com/',
@@ -32,18 +44,6 @@ const Experience = () => {
         'Revamped YouTube channel, social media banners, and thumbnails, creating seasonal logos for a more cohesive and inviting online presence.'
       ],
       imageURL: require ("../../assets/Companies/Metaintro.png"),
-    },
-    {
-      id: 3,
-      jobTitle: 'Front-end Developer @',
-      company: 'TechFleet',
-      companyURL: 'https://techfleet.org',
-      jobDuration: 'May 2023 - Oct 2023',
-      description: [
-        'Working closely with team consisting of UX/UI designers, developers, to create a responsive website for healthcare providers and its patients.',
-        'Implementing UI designs, conducting UI validation, and collaborating with backend developers to seamlessly integrate codes, ensuring a user-friendly, functional website.'
-      ],
-      imageURL: require ("../../assets/Companies/Techfleet.png")
     },
     {
       id: 4,
@@ -76,7 +76,7 @@ const Experience = () => {
         <Slider {...settings}>
           {carouselItems.map(item => (
             <div key={item.id} className='job_list'>
-              <div className={`job_logo ${item.id === 1 ? 'bigger' : ''}`}>
+              <div className={`job_logo ${item.id === 2 ? 'bigger' : ''}`}>
                  <img src={item.imageURL} alt={`experience-${item.id}`} />
               </div>
               <h4>
