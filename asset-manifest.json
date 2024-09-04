@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d3c87dd7.chunk.css",
-    "main.js": "/static/js/main.dc490d9d.chunk.js",
-    "main.js.map": "/static/js/main.dc490d9d.chunk.js.map",
+    "main.css": "/static/css/main.d9a76829.chunk.css",
+    "main.js": "/static/js/main.ec254745.chunk.js",
+    "main.js.map": "/static/js/main.ec254745.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6cf4bfbe.js",
     "runtime-main.js.map": "/static/js/runtime-main.6cf4bfbe.js.map",
     "static/css/2.7f5860a0.chunk.css": "/static/css/2.7f5860a0.chunk.css",
-    "static/js/2.44b99f9b.chunk.js": "/static/js/2.44b99f9b.chunk.js",
-    "static/js/2.44b99f9b.chunk.js.map": "/static/js/2.44b99f9b.chunk.js.map",
+    "static/js/2.8e7ecf89.chunk.js": "/static/js/2.8e7ecf89.chunk.js",
+    "static/js/2.8e7ecf89.chunk.js.map": "/static/js/2.8e7ecf89.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4dae7a4a1296c874c0aa21fa16948367.js": "/precache-manifest.4dae7a4a1296c874c0aa21fa16948367.js",
+    "precache-manifest.04c6bc1ea5fa164af0face9e5a4eb011.js": "/precache-manifest.04c6bc1ea5fa164af0face9e5a4eb011.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.7f5860a0.chunk.css.map": "/static/css/2.7f5860a0.chunk.css.map",
-    "static/css/main.d3c87dd7.chunk.css.map": "/static/css/main.d3c87dd7.chunk.css.map",
-    "static/js/2.44b99f9b.chunk.js.LICENSE.txt": "/static/js/2.44b99f9b.chunk.js.LICENSE.txt",
+    "static/css/main.d9a76829.chunk.css.map": "/static/css/main.d9a76829.chunk.css.map",
+    "static/js/2.8e7ecf89.chunk.js.LICENSE.txt": "/static/js/2.8e7ecf89.chunk.js.LICENSE.txt",
     "static/media/Anh_Pham_Resume.pdf": "/static/media/Anh_Pham_Resume.b9610323.pdf",
     "static/media/MNewsletter1.png": "/static/media/MNewsletter1.dbb97076.png",
     "static/media/MNewsletter2.png": "/static/media/MNewsletter2.5bb02483.png",
@@ -33,14 +33,16 @@
     "static/media/Resilience.png": "/static/media/Resilience.3a44beb3.png",
     "static/media/SpaceLab.png": "/static/media/SpaceLab.d0c436e7.png",
     "static/media/SpaceLab2.png": "/static/media/SpaceLab2.4289b314.png",
-    "static/media/Techfleet.png": "/static/media/Techfleet.21a9b391.png",
+    "static/media/Sprintfolio1.png": "/static/media/Sprintfolio1.fc08b0fc.png",
+    "static/media/Sprintfolio2.png": "/static/media/Sprintfolio2.a4b0812f.png",
+    "static/media/Sprintfolio3.png": "/static/media/Sprintfolio3.55155083.png",
     "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6cf4bfbe.js",
     "static/css/2.7f5860a0.chunk.css",
-    "static/js/2.44b99f9b.chunk.js",
-    "static/css/main.d3c87dd7.chunk.css",
-    "static/js/main.dc490d9d.chunk.js"
+    "static/js/2.8e7ecf89.chunk.js",
+    "static/css/main.d9a76829.chunk.css",
+    "static/js/main.ec254745.chunk.js"
   ]
 }
