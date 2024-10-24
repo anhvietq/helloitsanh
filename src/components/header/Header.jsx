@@ -38,7 +38,7 @@ const Header = () => {
           {showCursor && <span className="cursor">|</span>},
         </h2>
         <h2>It's Anh </h2>
-        <h5 className='text-light'>Front-end Developer and UX/UI Designer </h5>
+        <h5 className='text-light'> Frontend Developer and UX/UI Designer </h5>
         <p> As a self-taught Frontend Developer with a strong foundation in UX/UI design, 
           I bring a unique blend of technical expertise and creative insight to every project. 
           My journey from a Chemical Engineering background to the dynamic world of web development 
